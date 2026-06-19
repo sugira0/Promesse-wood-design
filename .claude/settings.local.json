@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pkill -f \"http.server 5501\")",
+      "Bash(python3 -m http.server 5501)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5501/)",
+      "Bash(python3 -m http.server 5502)",
+      "Bash(curl -s -o /dev/null -w \"showroom: %{http_code}\\\\n\" http://localhost:5502/showroom.html)"
+    ]
+  }
+}
