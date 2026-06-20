@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shop | Promesse Wood Design</title>
-  <meta name="description" content="Shop handcrafted luxury wooden products from Promesse Wood Design, Kigali Rwanda — dining tables, serving boards, carved bowls, kitchen pieces, and restaurant furniture." />
+  <meta name="description"
+    content="Shop handcrafted luxury wooden products from Promesse Wood Design, Kigali Rwanda — dining tables, serving boards, carved bowls, kitchen pieces, and restaurant furniture." />
   <meta name="theme-color" content="#0e0c0a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
   <div id="scroll-progress" aria-hidden="true"></div>
   <div id="preloader" aria-hidden="true">
     <p class="preloader__name">Promesse</p>
     <p class="preloader__sub">Wood Design</p>
-    <div class="preloader__line"><div class="preloader__fill"></div></div>
+    <div class="preloader__line">
+      <div class="preloader__fill"></div>
+    </div>
   </div>
   <div id="cursor-ring" aria-hidden="true"></div>
-  <div id="cursor-dot"  aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
 
   <!-- ═══════════ NAVIGATION ═══════════ -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="index.html" class="nav__logo" aria-label="Promesse Wood Design — Home">
-      <span class="nav__logo-name">Promesse</span>
-      <span class="nav__logo-sub">Wood Design</span>
+      <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="2" />
+        <path d="M50 25 Q45 30 45 35 L42 40 Q40 42 38 40 L35 38 Q33 36 31 38 L28 42 Q26 45 24 42 L20 38"
+          stroke="currentColor" stroke-width="1.5" fill="none" />
+        <path d="M50 25 Q55 30 55 35 L58 40 Q60 42 62 40 L65 38 Q67 36 69 38 L72 42 Q74 45 76 42 L80 38"
+          stroke="currentColor" stroke-width="1.5" fill="none" />
+        <path d="M48 25 L48 45 Q48 50 50 50 Q52 50 52 45 L52 25" stroke="currentColor" stroke-width="2" fill="none" />
+        <path d="M25 60 Q30 55 40 55 Q50 55 60 55 Q70 55 75 60 L75 65 Q73 70 65 72 Q50 75 35 72 Q27 70 25 65 Z"
+          stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.3" />
+        <path d="M30 62 Q35 60 40 60 Q50 60 60 60 Q65 60 70 62" stroke="currentColor" stroke-width="1" fill="none" />
+        <path d="M32 66 Q38 64 44 64 Q50 64 56 64 Q62 64 68 66" stroke="currentColor" stroke-width="1" fill="none" />
+      </svg>
+      <div class="nav__logo-text">
+        <span class="nav__logo-name">Promesse</span>
+        <span class="nav__logo-sub">Wood Design</span>
+      </div>
     </a>
     <ul class="nav__links" role="list">
-      <li><a href="index.html"       class="nav__link">Home</a></li>
-      <li><a href="shop.html"        class="nav__link nav__link--active">Shop</a></li>
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="shop.html" class="nav__link nav__link--active">Shop</a></li>
       <li><a href="collections.html" class="nav__link">Collections</a></li>
-      <li><a href="services.html"    class="nav__link">Services</a></li>
-      <li><a href="showroom.html"    class="nav__link">Showroom</a></li>
-      <li><a href="about.html"       class="nav__link">About</a></li>
-      <li><a href="contact.html"     class="nav__link">Contact</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="showroom.html" class="nav__link">Showroom</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
     </ul>
     <a href="contact.html" class="nav__cta desktop-only">Request a Quote</a>
     <button class="cart-trigger" aria-label="Open cart">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <path d="M16 10a4 4 0 01-8 0"/>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <path d="M16 10a4 4 0 01-8 0" />
       </svg>
       <span class="cart-count" aria-live="polite">0</span>
     </button>
@@ -53,14 +76,14 @@
   </nav>
 
   <div class="nav__overlay" role="dialog" aria-label="Mobile navigation" aria-modal="true">
-    <a href="index.html"       class="nav__link">Home</a>
-    <a href="shop.html"        class="nav__link">Shop</a>
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="shop.html" class="nav__link">Shop</a>
     <a href="collections.html" class="nav__link">Collections</a>
-    <a href="services.html"    class="nav__link">Services</a>
-    <a href="showroom.html"    class="nav__link">Showroom</a>
-    <a href="about.html"       class="nav__link">About</a>
-    <a href="contact.html"     class="nav__link">Contact</a>
-    <a href="contact.html"     class="nav__cta">Request a Quote</a>
+    <a href="services.html" class="nav__link">Services</a>
+    <a href="showroom.html" class="nav__link">Showroom</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="nav__cta">Request a Quote</a>
   </div>
 
   <main>
@@ -101,19 +124,14 @@
 
           <!-- ── DINING ── -->
 
-          <article class="shop-card reveal"
-            data-category="dining"
-            data-product-id="walnut-dining-table"
-            data-product-name="Grand Walnut Dining Table"
-            data-product-price="2400"
-            data-product-cat="Dining"
+          <article class="shop-card reveal" data-category="dining" data-product-id="walnut-dining-table"
+            data-product-name="Grand Walnut Dining Table" data-product-price="2400" data-product-cat="Dining"
             role="listitem">
             <div class="shop-card__img-wrap">
               <span class="shop-card__badge">Bestseller</span>
               <img class="shop-card__img"
                 src="https://plus.unsplash.com/premium_photo-1679520112257-f868838fc2ae?w=800&q=85&auto=format&fit=crop"
-                alt="Grand Walnut Dining Table — seats 8, handcrafted in Kigali"
-                loading="lazy" />
+                alt="Grand Walnut Dining Table — seats 8, handcrafted in Kigali" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Dining</p>
@@ -124,23 +142,19 @@
                   <span class="shop-card__price">$2,400</span>
                   <span class="shop-card__price-note">Free delivery in Kigali</span>
                 </div>
-                <button class="btn--shop-add btn--add-cart" aria-label="Add Grand Walnut Dining Table to cart">Add to Cart</button>
+                <button class="btn--shop-add btn--add-cart" aria-label="Add Grand Walnut Dining Table to cart">Add to
+                  Cart</button>
               </div>
             </div>
           </article>
 
-          <article class="shop-card reveal stagger-1"
-            data-category="dining"
-            data-product-id="farmhouse-table"
-            data-product-name="Long Farmhouse Table"
-            data-product-price="3200"
-            data-product-cat="Dining"
+          <article class="shop-card reveal stagger-1" data-category="dining" data-product-id="farmhouse-table"
+            data-product-name="Long Farmhouse Table" data-product-price="3200" data-product-cat="Dining"
             role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://images.unsplash.com/photo-1547062200-f195b1c77e30?w=800&q=85&auto=format&fit=crop"
-                alt="Long Farmhouse Table — solid acacia, seats 12"
-                loading="lazy" />
+                alt="Long Farmhouse Table — solid acacia, seats 12" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Dining</p>
@@ -151,169 +165,149 @@
                   <span class="shop-card__price">$3,200</span>
                   <span class="shop-card__price-note">Free delivery in Kigali</span>
                 </div>
-                <button class="btn--shop-add btn--add-cart" aria-label="Add Long Farmhouse Table to cart">Add to Cart</button>
+                <button class="btn--shop-add btn--add-cart" aria-label="Add Long Farmhouse Table to cart">Add to
+                  Cart</button>
               </div>
             </div>
           </article>
 
-          <article class="shop-card reveal stagger-2"
-            data-category="dining"
-            data-product-id="acacia-dining-set"
-            data-product-name="Acacia Dining Set"
-            data-product-price="4800"
-            data-product-cat="Dining"
-            role="listitem">
+          <article class="shop-card reveal stagger-2" data-category="dining" data-product-id="acacia-dining-set"
+            data-product-name="Acacia Dining Set" data-product-price="4800" data-product-cat="Dining" role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://images.unsplash.com/photo-1758977403865-f79e156415b3?w=800&q=85&auto=format&fit=crop"
-                alt="Acacia Dining Set — table and six chairs, natural oil finish"
-                loading="lazy" />
+                alt="Acacia Dining Set — table and six chairs, natural oil finish" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Dining</p>
               <h3 class="shop-card__name">Acacia Dining Set</h3>
-              <p class="shop-card__wood">Solid acacia · Table + 6 chairs · Beeswax finish · Made to order in 6–8 weeks</p>
+              <p class="shop-card__wood">Solid acacia · Table + 6 chairs · Beeswax finish · Made to order in 6–8 weeks
+              </p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price">$4,800</span>
                   <span class="shop-card__price-note">Set price — table &amp; 6 chairs</span>
                 </div>
-                <button class="btn--shop-add btn--add-cart" aria-label="Add Acacia Dining Set to cart">Add to Cart</button>
+                <button class="btn--shop-add btn--add-cart" aria-label="Add Acacia Dining Set to cart">Add to
+                  Cart</button>
               </div>
             </div>
           </article>
 
           <!-- ── KITCHEN ── -->
 
-          <article class="shop-card reveal"
-            data-category="kitchen"
-            data-product-id="olive-serving-board"
-            data-product-name="Olive Wood Serving Board"
-            data-product-price="185"
-            data-product-cat="Kitchen"
+          <article class="shop-card reveal" data-category="kitchen" data-product-id="olive-serving-board"
+            data-product-name="Olive Wood Serving Board" data-product-price="185" data-product-cat="Kitchen"
             role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://plus.unsplash.com/premium_photo-1714702846875-ca3a149c0592?w=800&q=85&auto=format&fit=crop"
-                alt="Olive Wood Serving Board with warm grain and natural oil finish"
-                loading="lazy" />
+                alt="Olive Wood Serving Board with warm grain and natural oil finish" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Kitchen</p>
               <h3 class="shop-card__name">Olive Wood Serving Board</h3>
-              <p class="shop-card__wood">Solid olive wood · Food-safe linseed finish · 45 × 25 cm · In stock, ships in 3–5 days</p>
+              <p class="shop-card__wood">Solid olive wood · Food-safe linseed finish · 45 × 25 cm · In stock, ships in
+                3–5 days</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price">$185</span>
                   <span class="shop-card__price-note">In stock</span>
                 </div>
-                <button class="btn--shop-add btn--add-cart" aria-label="Add Olive Wood Serving Board to cart">Add to Cart</button>
+                <button class="btn--shop-add btn--add-cart" aria-label="Add Olive Wood Serving Board to cart">Add to
+                  Cart</button>
               </div>
             </div>
           </article>
 
-          <article class="shop-card reveal stagger-1"
-            data-category="kitchen"
-            data-product-id="bowl-set"
-            data-product-name="Hand-Carved Bowl Set"
-            data-product-price="320"
-            data-product-cat="Kitchen"
+          <article class="shop-card reveal stagger-1" data-category="kitchen" data-product-id="bowl-set"
+            data-product-name="Hand-Carved Bowl Set" data-product-price="320" data-product-cat="Kitchen"
             role="listitem">
             <div class="shop-card__img-wrap">
               <span class="shop-card__badge">Popular</span>
               <img class="shop-card__img"
                 src="https://plus.unsplash.com/premium_photo-1664007711033-c7ad6a9d0940?w=800&q=85&auto=format&fit=crop"
-                alt="Set of three hand-carved hardwood bowls in graduating sizes"
-                loading="lazy" />
+                alt="Set of three hand-carved hardwood bowls in graduating sizes" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Kitchen</p>
               <h3 class="shop-card__name">Hand-Carved Bowl Set</h3>
-              <p class="shop-card__wood">Solid olive wood · Set of 3 graduated bowls · Tung oil finish · In stock, ships in 3–5 days</p>
+              <p class="shop-card__wood">Solid olive wood · Set of 3 graduated bowls · Tung oil finish · In stock, ships
+                in 3–5 days</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price">$320</span>
                   <span class="shop-card__price-note">Set of 3</span>
                 </div>
-                <button class="btn--shop-add btn--add-cart" aria-label="Add Hand-Carved Bowl Set to cart">Add to Cart</button>
+                <button class="btn--shop-add btn--add-cart" aria-label="Add Hand-Carved Bowl Set to cart">Add to
+                  Cart</button>
               </div>
             </div>
           </article>
 
-          <article class="shop-card reveal stagger-2"
-            data-category="kitchen"
-            data-product-id="utensil-set"
-            data-product-name="Herb &amp; Spice Utensil Set"
-            data-product-price="245"
-            data-product-cat="Kitchen"
+          <article class="shop-card reveal stagger-2" data-category="kitchen" data-product-id="utensil-set"
+            data-product-name="Herb &amp; Spice Utensil Set" data-product-price="245" data-product-cat="Kitchen"
             role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://images.unsplash.com/photo-1547609434-b732edfee020?w=800&q=85&auto=format&fit=crop"
-                alt="Wooden herb and spice utensil set — spatulas, spoons, and ladles"
-                loading="lazy" />
+                alt="Wooden herb and spice utensil set — spatulas, spoons, and ladles" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Kitchen</p>
               <h3 class="shop-card__name">Herb &amp; Spice Utensil Set</h3>
-              <p class="shop-card__wood">Iroko hardwood · 7-piece set · Food-safe oil finish · In stock, ships in 3–5 days</p>
+              <p class="shop-card__wood">Iroko hardwood · 7-piece set · Food-safe oil finish · In stock, ships in 3–5
+                days</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price">$245</span>
                   <span class="shop-card__price-note">7-piece set</span>
                 </div>
-                <button class="btn--shop-add btn--add-cart" aria-label="Add Herb & Spice Utensil Set to cart">Add to Cart</button>
+                <button class="btn--shop-add btn--add-cart" aria-label="Add Herb & Spice Utensil Set to cart">Add to
+                  Cart</button>
               </div>
             </div>
           </article>
 
-          <article class="shop-card reveal"
-            data-category="kitchen"
-            data-product-id="charcuterie-board"
-            data-product-name="Charcuterie Board Collection"
-            data-product-price="275"
-            data-product-cat="Kitchen"
+          <article class="shop-card reveal" data-category="kitchen" data-product-id="charcuterie-board"
+            data-product-name="Charcuterie Board Collection" data-product-price="275" data-product-cat="Kitchen"
             role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://images.unsplash.com/photo-1624811533744-f85d5325d49c?w=800&q=85&auto=format&fit=crop"
-                alt="Charcuterie and cheese board collection in dark acacia wood"
-                loading="lazy" />
+                alt="Charcuterie and cheese board collection in dark acacia wood" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Kitchen</p>
               <h3 class="shop-card__name">Charcuterie Board Collection</h3>
-              <p class="shop-card__wood">Dark acacia · Set of 2 boards + handle · Mineral oil finish · In stock, ships in 3–5 days</p>
+              <p class="shop-card__wood">Dark acacia · Set of 2 boards + handle · Mineral oil finish · In stock, ships
+                in 3–5 days</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price">$275</span>
                   <span class="shop-card__price-note">Set of 2</span>
                 </div>
-                <button class="btn--shop-add btn--add-cart" aria-label="Add Charcuterie Board Collection to cart">Add to Cart</button>
+                <button class="btn--shop-add btn--add-cart" aria-label="Add Charcuterie Board Collection to cart">Add to
+                  Cart</button>
               </div>
             </div>
           </article>
 
           <!-- ── RESTAURANT ── -->
 
-          <article class="shop-card reveal stagger-1"
-            data-category="restaurant"
-            data-product-id="bar-counter"
-            data-product-name="Restaurant Bar Counter"
-            data-product-price="0"
-            data-product-cat="Restaurant"
-            data-product-custom="true"
-            role="listitem">
+          <article class="shop-card reveal stagger-1" data-category="restaurant" data-product-id="bar-counter"
+            data-product-name="Restaurant Bar Counter" data-product-price="0" data-product-cat="Restaurant"
+            data-product-custom="true" role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://plus.unsplash.com/premium_photo-1664300494539-313eac2a6095?w=800&q=85&auto=format&fit=crop"
-                alt="Custom restaurant bar counter in oiled iroko hardwood"
-                loading="lazy" />
+                alt="Custom restaurant bar counter in oiled iroko hardwood" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Restaurant</p>
               <h3 class="shop-card__name">Restaurant Bar Counter</h3>
-              <p class="shop-card__wood">Iroko or acacia · Custom size &amp; finish · Includes installation in Kigali · Lead time 8–12 weeks</p>
+              <p class="shop-card__wood">Iroko or acacia · Custom size &amp; finish · Includes installation in Kigali ·
+                Lead time 8–12 weeks</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price shop-card__price--quote">Custom Quote</span>
@@ -324,24 +318,19 @@
             </div>
           </article>
 
-          <article class="shop-card reveal stagger-2"
-            data-category="restaurant"
-            data-product-id="banquette"
-            data-product-name="Banquette Seating"
-            data-product-price="0"
-            data-product-cat="Restaurant"
-            data-product-custom="true"
-            role="listitem">
+          <article class="shop-card reveal stagger-2" data-category="restaurant" data-product-id="banquette"
+            data-product-name="Banquette Seating" data-product-price="0" data-product-cat="Restaurant"
+            data-product-custom="true" role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://plus.unsplash.com/premium_photo-1680098058374-e580a9dbaeef?w=800&q=85&auto=format&fit=crop"
-                alt="Custom banquette seating with solid wood frame"
-                loading="lazy" />
+                alt="Custom banquette seating with solid wood frame" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Restaurant</p>
               <h3 class="shop-card__name">Banquette Seating</h3>
-              <p class="shop-card__wood">Acacia frame · Upholstered panels · Custom length &amp; fabric · Lead time 6–10 weeks</p>
+              <p class="shop-card__wood">Acacia frame · Upholstered panels · Custom length &amp; fabric · Lead time 6–10
+                weeks</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price shop-card__price--quote">Custom Quote</span>
@@ -352,24 +341,19 @@
             </div>
           </article>
 
-          <article class="shop-card reveal"
-            data-category="restaurant"
-            data-product-id="chefs-table"
-            data-product-name="The Chef's Table"
-            data-product-price="0"
-            data-product-cat="Restaurant"
-            data-product-custom="true"
-            role="listitem">
+          <article class="shop-card reveal" data-category="restaurant" data-product-id="chefs-table"
+            data-product-name="The Chef's Table" data-product-price="0" data-product-cat="Restaurant"
+            data-product-custom="true" role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://images.unsplash.com/photo-1506968430777-bf7784a87f23?w=800&q=85&auto=format&fit=crop"
-                alt="Chef's table in solid walnut — centrepiece for open kitchen dining"
-                loading="lazy" />
+                alt="Chef's table in solid walnut — centrepiece for open kitchen dining" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Restaurant</p>
               <h3 class="shop-card__name">The Chef's Table</h3>
-              <p class="shop-card__wood">Solid walnut · Centre-piece for open kitchens · Custom seats 6–14 · Lead time 8–12 weeks</p>
+              <p class="shop-card__wood">Solid walnut · Centre-piece for open kitchens · Custom seats 6–14 · Lead time
+                8–12 weeks</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price shop-card__price--quote">Custom Quote</span>
@@ -382,51 +366,43 @@
 
           <!-- ── CUSTOM ── -->
 
-          <article class="shop-card reveal stagger-1"
-            data-category="custom"
-            data-product-id="kitchen-island"
-            data-product-name="Bespoke Kitchen Island"
-            data-product-price="1800"
-            data-product-cat="Custom"
+          <article class="shop-card reveal stagger-1" data-category="custom" data-product-id="kitchen-island"
+            data-product-name="Bespoke Kitchen Island" data-product-price="1800" data-product-cat="Custom"
             role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://images.unsplash.com/photo-1690983322070-22861e13ce47?w=800&q=85&auto=format&fit=crop"
-                alt="Bespoke kitchen island in pale acacia with integrated knife block"
-                loading="lazy" />
+                alt="Bespoke kitchen island in pale acacia with integrated knife block" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Custom</p>
               <h3 class="shop-card__name">Bespoke Kitchen Island</h3>
-              <p class="shop-card__wood">Acacia or iroko · Custom dimensions · Integrated storage options · Lead time 6–8 weeks</p>
+              <p class="shop-card__wood">Acacia or iroko · Custom dimensions · Integrated storage options · Lead time
+                6–8 weeks</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price">from $1,800</span>
                   <span class="shop-card__price-note">Final price on brief</span>
                 </div>
-                <button class="btn--shop-add btn--add-cart" aria-label="Add Bespoke Kitchen Island to cart">Add to Cart</button>
+                <button class="btn--shop-add btn--add-cart" aria-label="Add Bespoke Kitchen Island to cart">Add to
+                  Cart</button>
               </div>
             </div>
           </article>
 
-          <article class="shop-card reveal stagger-2"
-            data-category="custom"
-            data-product-id="hotel-shelving"
-            data-product-name="Hotel Boutique Shelving"
-            data-product-price="0"
-            data-product-cat="Custom"
-            data-product-custom="true"
-            role="listitem">
+          <article class="shop-card reveal stagger-2" data-category="custom" data-product-id="hotel-shelving"
+            data-product-name="Hotel Boutique Shelving" data-product-price="0" data-product-cat="Custom"
+            data-product-custom="true" role="listitem">
             <div class="shop-card__img-wrap">
               <img class="shop-card__img"
                 src="https://images.unsplash.com/photo-1645651964715-d200ce0939cc?w=800&q=85&auto=format&fit=crop"
-                alt="Custom open shelving unit in dark oiled hardwood for boutique hotel"
-                loading="lazy" />
+                alt="Custom open shelving unit in dark oiled hardwood for boutique hotel" loading="lazy" />
             </div>
             <div class="shop-card__body">
               <p class="shop-card__cat">Custom</p>
               <h3 class="shop-card__name">Hotel Boutique Shelving</h3>
-              <p class="shop-card__wood">Dark iroko or rosewood · Custom modular system · Hotel &amp; hospitality specialist · Lead time 8–14 weeks</p>
+              <p class="shop-card__wood">Dark iroko or rosewood · Custom modular system · Hotel &amp; hospitality
+                specialist · Lead time 8–14 weeks</p>
               <div class="shop-card__footer">
                 <div>
                   <span class="shop-card__price shop-card__price--quote">Custom Quote</span>
@@ -447,19 +423,23 @@
         <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center;">
           <div class="reveal stagger-1">
             <p class="t-label" style="margin-bottom:0.5rem;">Delivery</p>
-            <p class="t-body" style="font-size:0.82rem;">Free delivery within Kigali. International shipping available on request.</p>
+            <p class="t-body" style="font-size:0.82rem;">Free delivery within Kigali. International shipping available
+              on request.</p>
           </div>
           <div class="reveal stagger-2">
             <p class="t-label" style="margin-bottom:0.5rem;">Craftsmanship</p>
-            <p class="t-body" style="font-size:0.82rem;">Every piece made entirely by hand in our KG 7 Ave studio, Kigali.</p>
+            <p class="t-body" style="font-size:0.82rem;">Every piece made entirely by hand in our KG 7 Ave studio,
+              Kigali.</p>
           </div>
           <div class="reveal stagger-3">
             <p class="t-label" style="margin-bottom:0.5rem;">Lead Times</p>
-            <p class="t-body" style="font-size:0.82rem;">In-stock pieces ship in 3–5 days. Made-to-order takes 4–14 weeks.</p>
+            <p class="t-body" style="font-size:0.82rem;">In-stock pieces ship in 3–5 days. Made-to-order takes 4–14
+              weeks.</p>
           </div>
           <div class="reveal stagger-4">
             <p class="t-label" style="margin-bottom:0.5rem;">Returns</p>
-            <p class="t-body" style="font-size:0.82rem;">Custom and made-to-order pieces are non-returnable. In-stock pieces: 14 days.</p>
+            <p class="t-body" style="font-size:0.82rem;">Custom and made-to-order pieces are non-returnable. In-stock
+              pieces: 14 days.</p>
           </div>
         </div>
       </div>
@@ -478,11 +458,11 @@
         <div>
           <span class="footer__heading">Navigate</span>
           <ul class="footer__links" role="list">
-            <li><a href="index.html"       class="footer__link">Home</a></li>
-            <li><a href="shop.html"        class="footer__link">Shop</a></li>
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
             <li><a href="collections.html" class="footer__link">Collections</a></li>
-            <li><a href="atelier.html"     class="footer__link">The Atelier</a></li>
-            <li><a href="contact.html"     class="footer__link">Contact</a></li>
+            <li><a href="atelier.html" class="footer__link">The Atelier</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
           </ul>
         </div>
         <div class="footer__contact">
@@ -493,7 +473,8 @@
         </div>
         <div>
           <span class="footer__heading">Newsletter</span>
-          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;line-height:1.7;">New pieces and studio updates.</p>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:0.5rem;line-height:1.7;">New pieces and
+            studio updates.</p>
           <div class="footer__newsletter-input-wrap">
             <input type="email" placeholder="your@email.com" aria-label="Email for newsletter" />
             <button type="button" aria-label="Subscribe">→</button>
@@ -513,4 +494,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

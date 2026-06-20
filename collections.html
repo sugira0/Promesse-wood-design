@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Collections | Promesse Wood Design</title>
-  <meta name="description" content="Browse our full collection of handcrafted luxury wooden products — dining tables, kitchen pieces, restaurant furniture, and bespoke commissions, made in Kigali, Rwanda." />
+  <meta name="description"
+    content="Browse our full collection of handcrafted luxury wooden products — dining tables, kitchen pieces, restaurant furniture, and bespoke commissions, made in Kigali, Rwanda." />
   <meta name="theme-color" content="#0e0c0a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
   <div id="scroll-progress" aria-hidden="true"></div>
   <div id="preloader" aria-hidden="true">
     <p class="preloader__name">Promesse</p>
     <p class="preloader__sub">Wood Design</p>
-    <div class="preloader__line"><div class="preloader__fill"></div></div>
+    <div class="preloader__line">
+      <div class="preloader__fill"></div>
+    </div>
   </div>
   <div id="cursor-ring" aria-hidden="true"></div>
-  <div id="cursor-dot"  aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
 
   <!-- ═══════════ NAVIGATION ═══════════ -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="index.html" class="nav__logo">
-      <span class="nav__logo-name">Promesse</span>
-      <span class="nav__logo-sub">Wood Design</span>
+      <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="2" />
+        <path d="M50 25 Q45 30 45 35 L42 40 Q40 42 38 40 L35 38 Q33 36 31 38 L28 42 Q26 45 24 42 L20 38"
+          stroke="currentColor" stroke-width="1.5" fill="none" />
+        <path d="M50 25 Q55 30 55 35 L58 40 Q60 42 62 40 L65 38 Q67 36 69 38 L72 42 Q74 45 76 42 L80 38"
+          stroke="currentColor" stroke-width="1.5" fill="none" />
+        <path d="M48 25 L48 45 Q48 50 50 50 Q52 50 52 45 L52 25" stroke="currentColor" stroke-width="2" fill="none" />
+        <path d="M25 60 Q30 55 40 55 Q50 55 60 55 Q70 55 75 60 L75 65 Q73 70 65 72 Q50 75 35 72 Q27 70 25 65 Z"
+          stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.3" />
+        <path d="M30 62 Q35 60 40 60 Q50 60 60 60 Q65 60 70 62" stroke="currentColor" stroke-width="1" fill="none" />
+        <path d="M32 66 Q38 64 44 64 Q50 64 56 64 Q62 64 68 66" stroke="currentColor" stroke-width="1" fill="none" />
+      </svg>
+      <div class="nav__logo-text">
+        <span class="nav__logo-name">Promesse</span>
+        <span class="nav__logo-sub">Wood Design</span>
+      </div>
     </a>
     <ul class="nav__links" role="list">
-      <li><a href="index.html"       class="nav__link">Home</a></li>
-      <li><a href="shop.html"        class="nav__link">Shop</a></li>
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="shop.html" class="nav__link">Shop</a></li>
       <li><a href="collections.html" class="nav__link nav__link--active">Collections</a></li>
-      <li><a href="services.html"    class="nav__link">Services</a></li>
-      <li><a href="showroom.html"    class="nav__link">Showroom</a></li>
-      <li><a href="about.html"       class="nav__link">About</a></li>
-      <li><a href="contact.html"     class="nav__link">Contact</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="showroom.html" class="nav__link">Showroom</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
     </ul>
     <a href="contact.html" class="nav__cta desktop-only">Request a Quote</a>
     <button class="cart-trigger" aria-label="Open cart">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <path d="M16 10a4 4 0 01-8 0"/>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <path d="M16 10a4 4 0 01-8 0" />
       </svg>
       <span class="cart-count" aria-live="polite">0</span>
     </button>
@@ -54,14 +77,14 @@
   </nav>
 
   <div class="nav__overlay" role="dialog" aria-label="Mobile navigation" aria-modal="true">
-    <a href="index.html"       class="nav__link">Home</a>
-    <a href="shop.html"        class="nav__link">Shop</a>
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="shop.html" class="nav__link">Shop</a>
     <a href="collections.html" class="nav__link">Collections</a>
-    <a href="services.html"    class="nav__link">Services</a>
-    <a href="showroom.html"    class="nav__link">Showroom</a>
-    <a href="about.html"       class="nav__link">About</a>
-    <a href="contact.html"     class="nav__link">Contact</a>
-    <a href="contact.html"     class="nav__cta">Request a Quote</a>
+    <a href="services.html" class="nav__link">Services</a>
+    <a href="showroom.html" class="nav__link">Showroom</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="nav__cta">Request a Quote</a>
   </div>
 
   <main>
@@ -69,12 +92,8 @@
     <!-- ═══════════ PAGE HERO ═══════════ -->
     <section class="page-hero" aria-label="Collections header">
       <div class="page-hero__bg">
-        <img
-          src="https://images.unsplash.com/photo-1659930087003-2d64e33181f7?w=1920&q=80&auto=format&fit=crop"
-          alt="Array of handcrafted wooden pieces laid on a workshop surface"
-          loading="eager"
-          fetchpriority="high"
-        />
+        <img src="https://images.unsplash.com/photo-1659930087003-2d64e33181f7?w=1920&q=80&auto=format&fit=crop"
+          alt="Array of handcrafted wooden pieces laid on a workshop surface" loading="eager" fetchpriority="high" />
         <div class="page-hero__overlay" aria-hidden="true"></div>
       </div>
       <div class="page-hero__content container">
@@ -105,18 +124,12 @@
         <div class="collections-grid" role="list" aria-label="Product collection">
 
           <!-- Dining -->
-          <article class="collection-item reveal" data-category="dining"
-            data-product-id="walnut-dining-table"
-            data-product-name="Grand Walnut Dining Table"
-            data-product-price="2400"
-            data-product-cat="Dining"
+          <article class="collection-item reveal" data-category="dining" data-product-id="walnut-dining-table"
+            data-product-name="Grand Walnut Dining Table" data-product-price="2400" data-product-cat="Dining"
             role="listitem">
-            <img
-              class="collection-item__img"
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1487015307662-6ce6210680f1?w=600&q=80&auto=format&fit=crop"
-              alt="Grand Walnut Dining Table for 8 — handcrafted in Kigali"
-              loading="lazy"
-            />
+              alt="Grand Walnut Dining Table for 8 — handcrafted in Kigali" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Dining</p>
               <h3 class="collection-item__name">Grand Walnut Dining Table</h3>
@@ -126,18 +139,12 @@
             </div>
           </article>
 
-          <article class="collection-item reveal stagger-1" data-category="dining"
-            data-product-id="farmhouse-table"
-            data-product-name="Long Farmhouse Table"
-            data-product-price="3200"
-            data-product-cat="Dining"
+          <article class="collection-item reveal stagger-1" data-category="dining" data-product-id="farmhouse-table"
+            data-product-name="Long Farmhouse Table" data-product-price="3200" data-product-cat="Dining"
             role="listitem">
-            <img
-              class="collection-item__img"
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1547062200-f195b1c77e30?w=600&q=80&auto=format&fit=crop"
-              alt="Long farmhouse dining table in solid acacia, seats 12"
-              loading="lazy"
-            />
+              alt="Long farmhouse dining table in solid acacia, seats 12" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Dining</p>
               <h3 class="collection-item__name">Long Farmhouse Table</h3>
@@ -147,18 +154,11 @@
             </div>
           </article>
 
-          <article class="collection-item reveal stagger-2" data-category="dining"
-            data-product-id="acacia-dining-set"
-            data-product-name="Acacia Dining Set"
-            data-product-price="4800"
-            data-product-cat="Dining"
-            role="listitem">
-            <img
-              class="collection-item__img"
+          <article class="collection-item reveal stagger-2" data-category="dining" data-product-id="acacia-dining-set"
+            data-product-name="Acacia Dining Set" data-product-price="4800" data-product-cat="Dining" role="listitem">
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1758977403865-f79e156415b3?w=600&q=80&auto=format&fit=crop"
-              alt="Acacia dining set — table and six chairs with natural oil finish"
-              loading="lazy"
-            />
+              alt="Acacia dining set — table and six chairs with natural oil finish" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Dining</p>
               <h3 class="collection-item__name">Acacia Dining Set</h3>
@@ -169,18 +169,12 @@
           </article>
 
           <!-- Kitchen -->
-          <article class="collection-item reveal" data-category="kitchen"
-            data-product-id="olive-serving-board"
-            data-product-name="Olive Wood Serving Board"
-            data-product-price="185"
-            data-product-cat="Kitchen"
+          <article class="collection-item reveal" data-category="kitchen" data-product-id="olive-serving-board"
+            data-product-name="Olive Wood Serving Board" data-product-price="185" data-product-cat="Kitchen"
             role="listitem">
-            <img
-              class="collection-item__img"
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1666013942797-9daa4b8b3b4f?w=600&q=80&auto=format&fit=crop"
-              alt="Olive wood serving board with natural grain and warm finish"
-              loading="lazy"
-            />
+              alt="Olive wood serving board with natural grain and warm finish" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Kitchen</p>
               <h3 class="collection-item__name">Olive Wood Serving Board</h3>
@@ -190,18 +184,12 @@
             </div>
           </article>
 
-          <article class="collection-item reveal stagger-1" data-category="kitchen"
-            data-product-id="bowl-set"
-            data-product-name="Hand-Carved Bowl Set"
-            data-product-price="320"
-            data-product-cat="Kitchen"
+          <article class="collection-item reveal stagger-1" data-category="kitchen" data-product-id="bowl-set"
+            data-product-name="Hand-Carved Bowl Set" data-product-price="320" data-product-cat="Kitchen"
             role="listitem">
-            <img
-              class="collection-item__img"
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1703668956608-e2693e00754b?w=600&q=80&auto=format&fit=crop"
-              alt="Set of three hand-carved hardwood bowls in graduating sizes"
-              loading="lazy"
-            />
+              alt="Set of three hand-carved hardwood bowls in graduating sizes" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Kitchen</p>
               <h3 class="collection-item__name">Hand-Carved Bowl Set</h3>
@@ -211,18 +199,12 @@
             </div>
           </article>
 
-          <article class="collection-item reveal stagger-2" data-category="kitchen"
-            data-product-id="utensil-set"
-            data-product-name="Herb &amp; Spice Utensil Set"
-            data-product-price="245"
-            data-product-cat="Kitchen"
+          <article class="collection-item reveal stagger-2" data-category="kitchen" data-product-id="utensil-set"
+            data-product-name="Herb &amp; Spice Utensil Set" data-product-price="245" data-product-cat="Kitchen"
             role="listitem">
-            <img
-              class="collection-item__img"
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1547609434-b732edfee020?w=600&q=80&auto=format&fit=crop"
-              alt="Wooden herb and spice utensil set — spatulas, spoons, and ladles"
-              loading="lazy"
-            />
+              alt="Wooden herb and spice utensil set — spatulas, spoons, and ladles" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Kitchen</p>
               <h3 class="collection-item__name">Herb &amp; Spice Utensil Set</h3>
@@ -232,18 +214,12 @@
             </div>
           </article>
 
-          <article class="collection-item reveal stagger-3" data-category="kitchen"
-            data-product-id="charcuterie-board"
-            data-product-name="Charcuterie Board Collection"
-            data-product-price="275"
-            data-product-cat="Kitchen"
+          <article class="collection-item reveal stagger-3" data-category="kitchen" data-product-id="charcuterie-board"
+            data-product-name="Charcuterie Board Collection" data-product-price="275" data-product-cat="Kitchen"
             role="listitem">
-            <img
-              class="collection-item__img"
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1624811533744-f85d5325d49c?w=600&q=80&auto=format&fit=crop"
-              alt="Charcuterie and cheese board collection in dark acacia wood"
-              loading="lazy"
-            />
+              alt="Charcuterie and cheese board collection in dark acacia wood" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Kitchen</p>
               <h3 class="collection-item__name">Charcuterie Board Collection</h3>
@@ -254,19 +230,12 @@
           </article>
 
           <!-- Restaurant Furniture -->
-          <article class="collection-item reveal" data-category="restaurant"
-            data-product-id="bar-counter"
-            data-product-name="Restaurant Bar Counter"
-            data-product-price="0"
-            data-product-cat="Restaurant Furniture"
-            data-product-custom="true"
-            role="listitem">
-            <img
-              class="collection-item__img"
+          <article class="collection-item reveal" data-category="restaurant" data-product-id="bar-counter"
+            data-product-name="Restaurant Bar Counter" data-product-price="0" data-product-cat="Restaurant Furniture"
+            data-product-custom="true" role="listitem">
+            <img class="collection-item__img"
               src="https://plus.unsplash.com/premium_photo-1664300494539-313eac2a6095?w=600&q=80&auto=format&fit=crop"
-              alt="Custom restaurant bar counter in oiled iroko hardwood"
-              loading="lazy"
-            />
+              alt="Custom restaurant bar counter in oiled iroko hardwood" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Restaurant Furniture</p>
               <h3 class="collection-item__name">Restaurant Bar Counter</h3>
@@ -275,19 +244,12 @@
             </div>
           </article>
 
-          <article class="collection-item reveal stagger-1" data-category="restaurant"
-            data-product-id="banquette"
-            data-product-name="Banquette Seating"
-            data-product-price="0"
-            data-product-cat="Restaurant Furniture"
-            data-product-custom="true"
-            role="listitem">
-            <img
-              class="collection-item__img"
+          <article class="collection-item reveal stagger-1" data-category="restaurant" data-product-id="banquette"
+            data-product-name="Banquette Seating" data-product-price="0" data-product-cat="Restaurant Furniture"
+            data-product-custom="true" role="listitem">
+            <img class="collection-item__img"
               src="https://plus.unsplash.com/premium_photo-1680098058374-e580a9dbaeef?w=600&q=80&auto=format&fit=crop"
-              alt="Custom banquette seating with solid wood frame and upholstered panels"
-              loading="lazy"
-            />
+              alt="Custom banquette seating with solid wood frame and upholstered panels" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Restaurant Furniture</p>
               <h3 class="collection-item__name">Banquette Seating</h3>
@@ -296,19 +258,12 @@
             </div>
           </article>
 
-          <article class="collection-item reveal stagger-2" data-category="restaurant"
-            data-product-id="chefs-table"
-            data-product-name="The Chef's Table"
-            data-product-price="0"
-            data-product-cat="Restaurant Furniture"
-            data-product-custom="true"
-            role="listitem">
-            <img
-              class="collection-item__img"
+          <article class="collection-item reveal stagger-2" data-category="restaurant" data-product-id="chefs-table"
+            data-product-name="The Chef's Table" data-product-price="0" data-product-cat="Restaurant Furniture"
+            data-product-custom="true" role="listitem">
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1506968430777-bf7784a87f23?w=600&q=80&auto=format&fit=crop"
-              alt="Chef's table in solid walnut — centrepiece for open kitchen dining"
-              loading="lazy"
-            />
+              alt="Chef's table in solid walnut — centrepiece for open kitchen dining" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Restaurant Furniture</p>
               <h3 class="collection-item__name">The Chef's Table</h3>
@@ -318,18 +273,12 @@
           </article>
 
           <!-- Custom Commissions -->
-          <article class="collection-item reveal" data-category="custom"
-            data-product-id="kitchen-island"
-            data-product-name="Bespoke Kitchen Island"
-            data-product-price="1800"
-            data-product-cat="Custom"
+          <article class="collection-item reveal" data-category="custom" data-product-id="kitchen-island"
+            data-product-name="Bespoke Kitchen Island" data-product-price="1800" data-product-cat="Custom"
             role="listitem">
-            <img
-              class="collection-item__img"
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1690983322070-22861e13ce47?w=600&q=80&auto=format&fit=crop"
-              alt="Bespoke kitchen island in pale acacia with integrated knife block"
-              loading="lazy"
-            />
+              alt="Bespoke kitchen island in pale acacia with integrated knife block" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Custom Commission</p>
               <h3 class="collection-item__name">Bespoke Kitchen Island</h3>
@@ -339,19 +288,12 @@
             </div>
           </article>
 
-          <article class="collection-item reveal stagger-1" data-category="custom"
-            data-product-id="hotel-shelving"
-            data-product-name="Hotel Boutique Shelving"
-            data-product-price="0"
-            data-product-cat="Custom Commission"
-            data-product-custom="true"
-            role="listitem">
-            <img
-              class="collection-item__img"
+          <article class="collection-item reveal stagger-1" data-category="custom" data-product-id="hotel-shelving"
+            data-product-name="Hotel Boutique Shelving" data-product-price="0" data-product-cat="Custom Commission"
+            data-product-custom="true" role="listitem">
+            <img class="collection-item__img"
               src="https://images.unsplash.com/photo-1645651964715-d200ce0939cc?w=600&q=80&auto=format&fit=crop"
-              alt="Custom open shelving unit in dark oiled hardwood for boutique hotel"
-              loading="lazy"
-            />
+              alt="Custom open shelving unit in dark oiled hardwood for boutique hotel" loading="lazy" />
             <div class="collection-item__overlay">
               <p class="collection-item__cat">Custom Commission</p>
               <h3 class="collection-item__name">Hotel Boutique Shelving</h3>
@@ -368,7 +310,8 @@
     <!-- ═══════════ CTA BAND ═══════════ -->
     <section class="cta-band" aria-label="Commission a piece">
       <div class="cta-band__bg" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1597958792579-bd3517df6399?w=1920&q=80&auto=format&fit=crop" alt="" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1597958792579-bd3517df6399?w=1920&q=80&auto=format&fit=crop" alt=""
+          loading="lazy" />
       </div>
       <div class="cta-band__content container">
         <p class="t-label reveal">Bespoke &amp; Made to Order</p>
@@ -409,7 +352,8 @@
         </div>
         <div>
           <span class="footer__heading">Newsletter</span>
-          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; line-height: 1.7;">New pieces and studio updates.</p>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; line-height: 1.7;">New pieces
+            and studio updates.</p>
           <div class="footer__newsletter-input-wrap">
             <input type="email" placeholder="your@email.com" aria-label="Email for newsletter" />
             <button type="button" aria-label="Subscribe">→</button>
@@ -429,4 +373,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

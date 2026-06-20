@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Showroom | Promesse Wood Design — Studio Product Viewer</title>
-  <meta name="description" content="Explore every detail of our handcrafted wood pieces in our interactive studio viewer — zoom, pan, rotate angles, and inspect the joinery up close before you buy." />
+  <meta name="description"
+    content="Explore every detail of our handcrafted wood pieces in our interactive studio viewer — zoom, pan, rotate angles, and inspect the joinery up close before you buy." />
   <meta name="theme-color" content="#0e0c0a" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
   <div id="scroll-progress" aria-hidden="true"></div>
   <div id="preloader" aria-hidden="true">
     <p class="preloader__name">Promesse</p>
     <p class="preloader__sub">Wood Design</p>
-    <div class="preloader__line"><div class="preloader__fill"></div></div>
+    <div class="preloader__line">
+      <div class="preloader__fill"></div>
+    </div>
   </div>
   <div id="cursor-ring" aria-hidden="true"></div>
-  <div id="cursor-dot"  aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
 
   <!-- ═══════════ NAVIGATION ═══════════ -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="index.html" class="nav__logo" aria-label="Promesse Wood Design — Home">
-      <span class="nav__logo-name">Promesse</span>
-      <span class="nav__logo-sub">Wood Design</span>
+      <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 100 100" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="2" />
+        <path d="M50 25 Q45 30 45 35 L42 40 Q40 42 38 40 L35 38 Q33 36 31 38 L28 42 Q26 45 24 42 L20 38"
+          stroke="currentColor" stroke-width="1.5" fill="none" />
+        <path d="M50 25 Q55 30 55 35 L58 40 Q60 42 62 40 L65 38 Q67 36 69 38 L72 42 Q74 45 76 42 L80 38"
+          stroke="currentColor" stroke-width="1.5" fill="none" />
+        <path d="M48 25 L48 45 Q48 50 50 50 Q52 50 52 45 L52 25" stroke="currentColor" stroke-width="2" fill="none" />
+        <path d="M25 60 Q30 55 40 55 Q50 55 60 55 Q70 55 75 60 L75 65 Q73 70 65 72 Q50 75 35 72 Q27 70 25 65 Z"
+          stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.3" />
+        <path d="M30 62 Q35 60 40 60 Q50 60 60 60 Q65 60 70 62" stroke="currentColor" stroke-width="1" fill="none" />
+        <path d="M32 66 Q38 64 44 64 Q50 64 56 64 Q62 64 68 66" stroke="currentColor" stroke-width="1" fill="none" />
+      </svg>
+      <div class="nav__logo-text">
+        <span class="nav__logo-name">Promesse</span>
+        <span class="nav__logo-sub">Wood Design</span>
+      </div>
     </a>
     <ul class="nav__links" role="list">
-      <li><a href="index.html"       class="nav__link">Home</a></li>
-      <li><a href="shop.html"        class="nav__link">Shop</a></li>
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="shop.html" class="nav__link">Shop</a></li>
       <li><a href="collections.html" class="nav__link">Collections</a></li>
-      <li><a href="services.html"    class="nav__link">Services</a></li>
-      <li><a href="showroom.html"    class="nav__link nav__link--active">Showroom</a></li>
-      <li><a href="about.html"       class="nav__link">About</a></li>
-      <li><a href="contact.html"     class="nav__link">Contact</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="showroom.html" class="nav__link nav__link--active">Showroom</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
     </ul>
     <a href="contact.html" class="nav__cta desktop-only" aria-label="Request a custom quote">Request a Quote</a>
     <button class="cart-trigger" aria-label="Open cart">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <path d="M16 10a4 4 0 01-8 0"/>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <path d="M16 10a4 4 0 01-8 0" />
       </svg>
       <span class="cart-count" aria-live="polite">0</span>
     </button>
@@ -52,14 +75,14 @@
   </nav>
 
   <div class="nav__overlay" role="dialog" aria-label="Mobile navigation" aria-modal="true">
-    <a href="index.html"       class="nav__link">Home</a>
-    <a href="shop.html"        class="nav__link">Shop</a>
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="shop.html" class="nav__link">Shop</a>
     <a href="collections.html" class="nav__link">Collections</a>
-    <a href="services.html"    class="nav__link">Services</a>
-    <a href="showroom.html"    class="nav__link">Showroom</a>
-    <a href="about.html"       class="nav__link">About</a>
-    <a href="contact.html"     class="nav__link">Contact</a>
-    <a href="contact.html"     class="nav__cta">Request a Quote</a>
+    <a href="services.html" class="nav__link">Services</a>
+    <a href="showroom.html" class="nav__link">Showroom</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="nav__cta">Request a Quote</a>
   </div>
 
   <!-- ═══════════ SHOWROOM APP ═══════════ -->
@@ -73,7 +96,8 @@
       </div>
       <ul class="ss-list" id="showroomProducts" role="listbox" aria-label="Products"></ul>
       <div class="ss-footer">
-        <a href="contact.html" class="btn btn--outline btn--sm" style="display:block;text-align:center;">Commission a Custom Piece →</a>
+        <a href="contact.html" class="btn btn--outline btn--sm" style="display:block;text-align:center;">Commission a
+          Custom Piece →</a>
       </div>
     </aside>
 
@@ -84,21 +108,29 @@
       <div class="viewer-topbar" role="banner">
         <div class="vtb-left">
           <div class="vtb-name" id="viewerProductName">—</div>
-          <div class="vtb-sub"  id="viewerProductSub">—</div>
+          <div class="vtb-sub" id="viewerProductSub">—</div>
         </div>
         <div class="vtb-center" aria-live="polite">
           <span class="vtb-angle-label" id="angleLabel">Overview</span>
-          <span class="vtb-angle-pos"   id="anglePos">1 / 1</span>
+          <span class="vtb-angle-pos" id="anglePos">1 / 1</span>
         </div>
         <div class="vtb-right" role="toolbar" aria-label="Zoom controls">
           <button class="viewer-ctrl-btn" id="zoomOutBtn" title="Zoom out (−)">−</button>
           <span class="viewer-zoom-pct" id="zoomLevel" aria-live="polite">100%</span>
           <button class="viewer-ctrl-btn" id="zoomInBtn" title="Zoom in (+)">+</button>
           <button class="viewer-ctrl-btn" id="zoomResetBtn" title="Reset zoom (Esc)" disabled>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+              <path d="M3 3v5h5" />
+            </svg>
           </button>
           <button class="viewer-ctrl-btn" id="fullscreenBtn" title="Fullscreen (F)" aria-label="Enter fullscreen">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polyline points="15 3 21 3 21 9" />
+              <polyline points="9 21 3 21 3 15" />
+              <line x1="21" y1="3" x2="14" y2="10" />
+              <line x1="3" y1="21" x2="10" y2="14" />
+            </svg>
           </button>
         </div>
       </div>
@@ -111,14 +143,19 @@
         </div>
 
         <button class="viewer-arrow viewer-arrow--prev" id="prevAngle" aria-label="Previous angle">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
         </button>
         <button class="viewer-arrow viewer-arrow--next" id="nextAngle" aria-label="Next angle">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
         </button>
 
         <div class="viewer-hint" id="viewerHint" aria-hidden="true">
-          Scroll to zoom &nbsp;·&nbsp; Drag to pan &nbsp;·&nbsp; ← → to browse angles &nbsp;·&nbsp; Click gold dots for details
+          Scroll to zoom &nbsp;·&nbsp; Drag to pan &nbsp;·&nbsp; ← → to browse angles &nbsp;·&nbsp; Click gold dots for
+          details
         </div>
       </div>
 
@@ -128,10 +165,10 @@
       <!-- Info bar -->
       <div class="viewer-infobar" id="viewerInfobar">
         <div class="vib-price" id="viewerPrice">—</div>
-        <div class="vib-desc"  id="viewerDesc">—</div>
+        <div class="vib-desc" id="viewerDesc">—</div>
         <div class="vib-actions" id="vibActions">
-          <button class="btn btn--primary btn--sm btn--add-cart" id="viewerAddBtn"
-            data-product-id="" data-product-name="" data-product-price="" data-product-cat="">
+          <button class="btn btn--primary btn--sm btn--add-cart" id="viewerAddBtn" data-product-id=""
+            data-product-name="" data-product-price="" data-product-cat="">
             Add to Cart
           </button>
           <a href="contact.html" class="btn btn--outline btn--sm" id="viewerQuoteBtn">Request a Quote</a>
@@ -147,9 +184,16 @@
     <div class="container">
       <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;">
 
-        <div style="border:1px solid var(--border-subtle);padding:2.2rem 2rem;transition:border-color .35s;" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border-subtle)'">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" style="margin-bottom:1.2rem;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <h3 style="font-family:var(--serif);font-size:1.1rem;color:var(--cream);margin-bottom:.6rem;">Location &amp; Hours</h3>
+        <div style="border:1px solid var(--border-subtle);padding:2.2rem 2rem;transition:border-color .35s;"
+          onmouseenter="this.style.borderColor='var(--gold)'"
+          onmouseleave="this.style.borderColor='var(--border-subtle)'">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+            style="margin-bottom:1.2rem;">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <h3 style="font-family:var(--serif);font-size:1.1rem;color:var(--cream);margin-bottom:.6rem;">Location &amp;
+            Hours</h3>
           <p style="font-size:.84rem;color:var(--text-muted);line-height:1.8;">
             KG 7 Ave, Kiyovu, Kigali<br>
             Mon–Fri &nbsp; 9:00 am – 5:00 pm<br>
@@ -158,22 +202,42 @@
           </p>
         </div>
 
-        <div style="border:1px solid var(--border-subtle);padding:2.2rem 2rem;transition:border-color .35s;" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border-subtle)'">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" style="margin-bottom:1.2rem;"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <h3 style="font-family:var(--serif);font-size:1.1rem;color:var(--cream);margin-bottom:.6rem;">Book a Private Viewing</h3>
+        <div style="border:1px solid var(--border-subtle);padding:2.2rem 2rem;transition:border-color .35s;"
+          onmouseenter="this.style.borderColor='var(--gold)'"
+          onmouseleave="this.style.borderColor='var(--border-subtle)'">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+            style="margin-bottom:1.2rem;">
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          <h3 style="font-family:var(--serif);font-size:1.1rem;color:var(--cream);margin-bottom:.6rem;">Book a Private
+            Viewing</h3>
           <p style="font-size:.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:1rem;">
             One-on-one sessions with a designer. See samples, discuss materials, and leave with a clear project brief.
           </p>
-          <a href="contact.html" style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);">Book a session →</a>
+          <a href="contact.html"
+            style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);">Book
+            a session →</a>
         </div>
 
-        <div style="border:1px solid var(--border-subtle);padding:2.2rem 2rem;transition:border-color .35s;" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border-subtle)'">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" style="margin-bottom:1.2rem;"><path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
-          <h3 style="font-family:var(--serif);font-size:1.1rem;color:var(--cream);margin-bottom:.6rem;">Artisan Demonstrations</h3>
+        <div style="border:1px solid var(--border-subtle);padding:2.2rem 2rem;transition:border-color .35s;"
+          onmouseenter="this.style.borderColor='var(--gold)'"
+          onmouseleave="this.style.borderColor='var(--border-subtle)'">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+            style="margin-bottom:1.2rem;">
+            <path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z" />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+          <h3 style="font-family:var(--serif);font-size:1.1rem;color:var(--cream);margin-bottom:.6rem;">Artisan
+            Demonstrations</h3>
           <p style="font-size:.84rem;color:var(--text-muted);line-height:1.8;margin-bottom:1rem;">
             Visit weekday mornings to watch our craftsmen hand-planing, carving, and finishing pieces in real time.
           </p>
-          <a href="https://wa.me/250786666111" target="_blank" rel="noopener" style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);">WhatsApp us →</a>
+          <a href="https://wa.me/250786666111" target="_blank" rel="noopener"
+            style="font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);">WhatsApp
+            us →</a>
         </div>
 
       </div>
@@ -186,19 +250,20 @@
       <div class="footer__grid">
         <div class="footer__brand">
           <p class="footer__logo-name">Promesse</p>
-          <p class="footer__tagline">Handcrafted luxury wooden products from Kigali, Rwanda. Designed for hotels, restaurants, and discerning homes.</p>
+          <p class="footer__tagline">Handcrafted luxury wooden products from Kigali, Rwanda. Designed for hotels,
+            restaurants, and discerning homes.</p>
         </div>
         <div>
           <span class="footer__heading">Navigate</span>
           <ul class="footer__links" role="list">
-            <li><a href="index.html"       class="footer__link">Home</a></li>
-            <li><a href="shop.html"        class="footer__link">Shop</a></li>
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="shop.html" class="footer__link">Shop</a></li>
             <li><a href="collections.html" class="footer__link">Collections</a></li>
-            <li><a href="services.html"    class="footer__link">Services</a></li>
-            <li><a href="showroom.html"    class="footer__link">Showroom</a></li>
-            <li><a href="about.html"       class="footer__link">About Us</a></li>
-            <li><a href="atelier.html"     class="footer__link">The Atelier</a></li>
-            <li><a href="contact.html"     class="footer__link">Contact</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="showroom.html" class="footer__link">Showroom</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="atelier.html" class="footer__link">The Atelier</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
           </ul>
         </div>
         <div class="footer__contact">
@@ -209,7 +274,8 @@
         </div>
         <div>
           <span class="footer__heading">Newsletter</span>
-          <p style="font-size:.8rem;color:var(--text-muted);margin-bottom:.5rem;line-height:1.7;">New pieces, process stories, and studio updates.</p>
+          <p style="font-size:.8rem;color:var(--text-muted);margin-bottom:.5rem;line-height:1.7;">New pieces, process
+            stories, and studio updates.</p>
           <div class="footer__newsletter-input-wrap">
             <input type="email" placeholder="your@email.com" aria-label="Email for newsletter" />
             <button type="button" aria-label="Subscribe">→</button>
@@ -229,177 +295,177 @@
 
   <!-- ═══════════ SHOWROOM VIEWER SCRIPT ═══════════ -->
   <script>
-  (function () {
-    'use strict';
+    (function () {
+      'use strict';
 
-    /* ── Product data ─────────────────────────────────────────────── */
-    const PRODUCTS = [
-      {
-        id: 'dining-table',
-        name: 'Grand Kiaat Dining Table',
-        subtitle: 'Solid Kiaat · 2400 × 900 mm · 8 seats',
-        price: '$2,800',
-        priceNum: '2800',
-        cat: 'Dining',
-        custom: false,
-        badge: 'Bestseller',
-        desc: 'Eight metres of book-matched kiaat grain, hand-jointed and finished with three coats of hand-rubbed tung oil. Mortise-and-tenon construction with steel drawbore pins — no glue, built for generations.',
-        angles: [
-          { src: 'https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?w=1600&q=90&auto=format&fit=crop', label: 'Overview' },
-          { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Surface Grain' },
-          { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Side Profile' },
-          { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Joint Detail' },
-          { src: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=1600&q=90&auto=format&fit=crop', label: 'Leg & Base' },
-          { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=90&auto=format&fit=crop', label: 'In Context' },
-        ],
-        hotspots: [
-          { x: 36, y: 44, label: 'Book-matched grain', desc: 'Two boards from the same log opened like a book — the grain mirrors perfectly across the centre seam.' },
-          { x: 70, y: 62, label: 'Mortise & tenon', desc: 'Hand-cut joints secured with steel drawbore pins. No glue — pure mechanical strength built to last centuries.' },
-          { x: 54, y: 24, label: 'Tung oil finish', desc: '3 coats of pure tung oil, hand-rubbed and buffed between each coat. Deepens and enriches with age.' },
-        ],
-      },
-      {
-        id: 'charcuterie-board',
-        name: 'Artisan Charcuterie Board',
-        subtitle: 'Kiaat & Olive Wood · 450 × 280 mm',
-        price: '$280',
-        priceNum: '280',
-        cat: 'Kitchen',
-        custom: false,
-        badge: 'Popular',
-        desc: 'Carved from a single slab of kiaat with an olive-wood insert handle. A 6 mm juice groove runs the full perimeter. Finished in food-grade beeswax and walnut oil — safe for direct food contact.',
-        angles: [
-          { src: 'https://images.unsplash.com/photo-1590375096341-0c6b35a09d79?w=1600&q=90&auto=format&fit=crop', label: 'Top View' },
-          { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Surface' },
-          { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Grain Closeup' },
-          { src: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=1600&q=90&auto=format&fit=crop', label: 'Handle Detail' },
-          { src: 'https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?w=1600&q=90&auto=format&fit=crop', label: 'Edge Profile' },
-        ],
-        hotspots: [
-          { x: 40, y: 40, label: 'Carved juice groove', desc: 'A 6 mm channel hand-carved around the full perimeter keeps juices on the board, not your table.' },
-          { x: 74, y: 56, label: 'Olive wood handle', desc: 'The handle is a separate olive-wood piece, friction-fit and epoxy-bonded into a routed slot — zero movement over time.' },
-          { x: 24, y: 28, label: 'Beeswax finish', desc: 'Pure food-grade beeswax buffed in by hand. Easy to re-condition at home with any food-safe oil.' },
-        ],
-      },
-      {
-        id: 'carved-bowl',
-        name: 'Carved Olive Wood Bowl',
-        subtitle: 'Solid Olive Wood · ⌀ 320 mm',
-        price: '$180',
-        priceNum: '180',
-        cat: 'Kitchen',
-        custom: false,
-        badge: null,
-        desc: 'Hand-carved from a single piece of East African olive wood. The rim is cut to exactly 4 mm — thin enough to feel delicate, thick enough to withstand daily use. No two bowls share the same grain.',
-        angles: [
-          { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Top View' },
-          { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Grain Detail' },
-          { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Side Profile' },
-          { src: 'https://images.unsplash.com/photo-1590375096341-0c6b35a09d79?w=1600&q=90&auto=format&fit=crop', label: 'Rim Detail' },
-          { src: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=1600&q=90&auto=format&fit=crop', label: 'Underside' },
-        ],
-        hotspots: [
-          { x: 50, y: 26, label: 'Hand-carved rim', desc: 'Carved to exactly 4 mm by a single pass of the gouge. Uniform thickness all the way around — checked by hand.' },
-          { x: 30, y: 62, label: 'Natural olive grain', desc: 'Olive wood\'s flowing, irregular grain is unique to every tree. No two bowls are ever visually identical.' },
-          { x: 68, y: 48, label: 'Interior hollow', desc: 'The interior is carved with a curved bottom gouge — no flat spots. Liquids pool to the centre naturally.' },
-        ],
-      },
-      {
-        id: 'bar-counter',
-        name: 'Restaurant Bar Counter',
-        subtitle: 'Solid Hardwood on Steel Frame · Custom dimensions',
-        price: 'Custom Quote',
-        priceNum: null,
-        cat: 'Restaurant',
-        custom: true,
-        badge: null,
-        desc: 'Our signature bar counter — a solid hardwood waterfall top on a welded steel carcass, with a brushed stainless footrest rail. Available in any width and wood species. Lead time 8–10 weeks.',
-        angles: [
-          { src: 'https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?w=1600&q=90&auto=format&fit=crop', label: 'Front View' },
-          { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Counter Surface' },
-          { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'End Cap' },
-          { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Footrest Rail' },
-          { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=90&auto=format&fit=crop', label: 'Installed' },
-        ],
-        hotspots: [
-          { x: 46, y: 32, label: 'Waterfall edge', desc: 'The top surface wraps over the front face in one continuous piece — no seam, no join, one flowing form.' },
-          { x: 72, y: 68, label: 'Steel footrest rail', desc: 'Brushed 316 stainless tube, TIG-welded to the steel frame and polished by hand. Rated to 200 kg per section.' },
-          { x: 24, y: 52, label: 'Hardwood carcass', desc: 'Internal structure is solid hardwood throughout — no MDF, no ply. Built to withstand decades of commercial daily use.' },
-        ],
-      },
-      {
-        id: 'serving-platter',
-        name: 'Long Serving Platter',
-        subtitle: 'Kiaat Wood · 600 × 180 mm',
-        price: '$160',
-        priceNum: '160',
-        cat: 'Kitchen',
-        custom: false,
-        badge: null,
-        desc: 'A single-piece kiaat serving platter designed for sharing boards and long table presentations. Carved handles at each end. Finished with food-grade beeswax and lemon oil.',
-        angles: [
-          { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=90&auto=format&fit=crop', label: 'Top View' },
-          { src: 'https://images.unsplash.com/photo-1590375096341-0c6b35a09d79?w=1600&q=90&auto=format&fit=crop', label: 'In Use' },
-          { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Grain Pattern' },
-          { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Handle Detail' },
-          { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Edge Profile' },
-        ],
-        hotspots: [
-          { x: 18, y: 50, label: 'Carved end handle', desc: 'Each end tapers and rounds into a palm-grip handle — carved from the same slab, no glue or fasteners.' },
-          { x: 55, y: 35, label: 'Lemon oil finish', desc: 'Food-safe lemon oil draws deep into the grain and naturally repels moisture. Simple to re-apply at home.' },
-        ],
-      },
-      {
-        id: 'sideboard',
-        name: 'Studio Sideboard',
-        subtitle: 'Solid Kiaat · 1600 × 450 × 800 mm',
-        price: '$3,200',
-        priceNum: '3200',
-        cat: 'Dining',
-        custom: false,
-        badge: null,
-        desc: 'A three-drawer sideboard in solid kiaat with hairpin steel legs. The drawer faces are cut from continuous grain — open all three and the grain flows uninterrupted across the front.',
-        angles: [
-          { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Front View' },
-          { src: 'https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?w=1600&q=90&auto=format&fit=crop', label: 'Three-Quarter' },
-          { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Drawer Grain' },
-          { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Joinery Detail' },
-          { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=90&auto=format&fit=crop', label: 'In Setting' },
-        ],
-        hotspots: [
-          { x: 50, y: 42, label: 'Continuous grain front', desc: 'All three drawer faces were cut from one board and matched back in sequence — grain flows as one across the full width.' },
-          { x: 75, y: 78, label: 'Hairpin steel legs', desc: 'Hand-bent 12 mm steel rod legs, powder-coated in matte black. Each leg is individually levelled at installation.' },
-          { x: 28, y: 56, label: 'Dovetail drawer boxes', desc: 'Drawers run on hand-cut dovetail slides — no runners, no hardware. They get smoother with every year of use.' },
-        ],
-      },
-    ];
+      /* ── Product data ─────────────────────────────────────────────── */
+      const PRODUCTS = [
+        {
+          id: 'dining-table',
+          name: 'Grand Kiaat Dining Table',
+          subtitle: 'Solid Kiaat · 2400 × 900 mm · 8 seats',
+          price: '$2,800',
+          priceNum: '2800',
+          cat: 'Dining',
+          custom: false,
+          badge: 'Bestseller',
+          desc: 'Eight metres of book-matched kiaat grain, hand-jointed and finished with three coats of hand-rubbed tung oil. Mortise-and-tenon construction with steel drawbore pins — no glue, built for generations.',
+          angles: [
+            { src: 'https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?w=1600&q=90&auto=format&fit=crop', label: 'Overview' },
+            { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Surface Grain' },
+            { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Side Profile' },
+            { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Joint Detail' },
+            { src: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=1600&q=90&auto=format&fit=crop', label: 'Leg & Base' },
+            { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=90&auto=format&fit=crop', label: 'In Context' },
+          ],
+          hotspots: [
+            { x: 36, y: 44, label: 'Book-matched grain', desc: 'Two boards from the same log opened like a book — the grain mirrors perfectly across the centre seam.' },
+            { x: 70, y: 62, label: 'Mortise & tenon', desc: 'Hand-cut joints secured with steel drawbore pins. No glue — pure mechanical strength built to last centuries.' },
+            { x: 54, y: 24, label: 'Tung oil finish', desc: '3 coats of pure tung oil, hand-rubbed and buffed between each coat. Deepens and enriches with age.' },
+          ],
+        },
+        {
+          id: 'charcuterie-board',
+          name: 'Artisan Charcuterie Board',
+          subtitle: 'Kiaat & Olive Wood · 450 × 280 mm',
+          price: '$280',
+          priceNum: '280',
+          cat: 'Kitchen',
+          custom: false,
+          badge: 'Popular',
+          desc: 'Carved from a single slab of kiaat with an olive-wood insert handle. A 6 mm juice groove runs the full perimeter. Finished in food-grade beeswax and walnut oil — safe for direct food contact.',
+          angles: [
+            { src: 'https://images.unsplash.com/photo-1590375096341-0c6b35a09d79?w=1600&q=90&auto=format&fit=crop', label: 'Top View' },
+            { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Surface' },
+            { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Grain Closeup' },
+            { src: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=1600&q=90&auto=format&fit=crop', label: 'Handle Detail' },
+            { src: 'https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?w=1600&q=90&auto=format&fit=crop', label: 'Edge Profile' },
+          ],
+          hotspots: [
+            { x: 40, y: 40, label: 'Carved juice groove', desc: 'A 6 mm channel hand-carved around the full perimeter keeps juices on the board, not your table.' },
+            { x: 74, y: 56, label: 'Olive wood handle', desc: 'The handle is a separate olive-wood piece, friction-fit and epoxy-bonded into a routed slot — zero movement over time.' },
+            { x: 24, y: 28, label: 'Beeswax finish', desc: 'Pure food-grade beeswax buffed in by hand. Easy to re-condition at home with any food-safe oil.' },
+          ],
+        },
+        {
+          id: 'carved-bowl',
+          name: 'Carved Olive Wood Bowl',
+          subtitle: 'Solid Olive Wood · ⌀ 320 mm',
+          price: '$180',
+          priceNum: '180',
+          cat: 'Kitchen',
+          custom: false,
+          badge: null,
+          desc: 'Hand-carved from a single piece of East African olive wood. The rim is cut to exactly 4 mm — thin enough to feel delicate, thick enough to withstand daily use. No two bowls share the same grain.',
+          angles: [
+            { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Top View' },
+            { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Grain Detail' },
+            { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Side Profile' },
+            { src: 'https://images.unsplash.com/photo-1590375096341-0c6b35a09d79?w=1600&q=90&auto=format&fit=crop', label: 'Rim Detail' },
+            { src: 'https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=1600&q=90&auto=format&fit=crop', label: 'Underside' },
+          ],
+          hotspots: [
+            { x: 50, y: 26, label: 'Hand-carved rim', desc: 'Carved to exactly 4 mm by a single pass of the gouge. Uniform thickness all the way around — checked by hand.' },
+            { x: 30, y: 62, label: 'Natural olive grain', desc: 'Olive wood\'s flowing, irregular grain is unique to every tree. No two bowls are ever visually identical.' },
+            { x: 68, y: 48, label: 'Interior hollow', desc: 'The interior is carved with a curved bottom gouge — no flat spots. Liquids pool to the centre naturally.' },
+          ],
+        },
+        {
+          id: 'bar-counter',
+          name: 'Restaurant Bar Counter',
+          subtitle: 'Solid Hardwood on Steel Frame · Custom dimensions',
+          price: 'Custom Quote',
+          priceNum: null,
+          cat: 'Restaurant',
+          custom: true,
+          badge: null,
+          desc: 'Our signature bar counter — a solid hardwood waterfall top on a welded steel carcass, with a brushed stainless footrest rail. Available in any width and wood species. Lead time 8–10 weeks.',
+          angles: [
+            { src: 'https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?w=1600&q=90&auto=format&fit=crop', label: 'Front View' },
+            { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Counter Surface' },
+            { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'End Cap' },
+            { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Footrest Rail' },
+            { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=90&auto=format&fit=crop', label: 'Installed' },
+          ],
+          hotspots: [
+            { x: 46, y: 32, label: 'Waterfall edge', desc: 'The top surface wraps over the front face in one continuous piece — no seam, no join, one flowing form.' },
+            { x: 72, y: 68, label: 'Steel footrest rail', desc: 'Brushed 316 stainless tube, TIG-welded to the steel frame and polished by hand. Rated to 200 kg per section.' },
+            { x: 24, y: 52, label: 'Hardwood carcass', desc: 'Internal structure is solid hardwood throughout — no MDF, no ply. Built to withstand decades of commercial daily use.' },
+          ],
+        },
+        {
+          id: 'serving-platter',
+          name: 'Long Serving Platter',
+          subtitle: 'Kiaat Wood · 600 × 180 mm',
+          price: '$160',
+          priceNum: '160',
+          cat: 'Kitchen',
+          custom: false,
+          badge: null,
+          desc: 'A single-piece kiaat serving platter designed for sharing boards and long table presentations. Carved handles at each end. Finished with food-grade beeswax and lemon oil.',
+          angles: [
+            { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=90&auto=format&fit=crop', label: 'Top View' },
+            { src: 'https://images.unsplash.com/photo-1590375096341-0c6b35a09d79?w=1600&q=90&auto=format&fit=crop', label: 'In Use' },
+            { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Grain Pattern' },
+            { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Handle Detail' },
+            { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Edge Profile' },
+          ],
+          hotspots: [
+            { x: 18, y: 50, label: 'Carved end handle', desc: 'Each end tapers and rounds into a palm-grip handle — carved from the same slab, no glue or fasteners.' },
+            { x: 55, y: 35, label: 'Lemon oil finish', desc: 'Food-safe lemon oil draws deep into the grain and naturally repels moisture. Simple to re-apply at home.' },
+          ],
+        },
+        {
+          id: 'sideboard',
+          name: 'Studio Sideboard',
+          subtitle: 'Solid Kiaat · 1600 × 450 × 800 mm',
+          price: '$3,200',
+          priceNum: '3200',
+          cat: 'Dining',
+          custom: false,
+          badge: null,
+          desc: 'A three-drawer sideboard in solid kiaat with hairpin steel legs. The drawer faces are cut from continuous grain — open all three and the grain flows uninterrupted across the front.',
+          angles: [
+            { src: 'https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600&q=90&auto=format&fit=crop', label: 'Front View' },
+            { src: 'https://images.unsplash.com/photo-1631396326646-c06a935ff3a6?w=1600&q=90&auto=format&fit=crop', label: 'Three-Quarter' },
+            { src: 'https://images.unsplash.com/photo-1517683058823-f4c25e5f6e02?w=1600&q=90&auto=format&fit=crop', label: 'Drawer Grain' },
+            { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop', label: 'Joinery Detail' },
+            { src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=90&auto=format&fit=crop', label: 'In Setting' },
+          ],
+          hotspots: [
+            { x: 50, y: 42, label: 'Continuous grain front', desc: 'All three drawer faces were cut from one board and matched back in sequence — grain flows as one across the full width.' },
+            { x: 75, y: 78, label: 'Hairpin steel legs', desc: 'Hand-bent 12 mm steel rod legs, powder-coated in matte black. Each leg is individually levelled at installation.' },
+            { x: 28, y: 56, label: 'Dovetail drawer boxes', desc: 'Drawers run on hand-cut dovetail slides — no runners, no hardware. They get smoother with every year of use.' },
+          ],
+        },
+      ];
 
-    /* ── State ─────────────────────────────────────────────────────── */
-    let product = PRODUCTS[0];
-    let angleIdx = 0;
-    let zoom = 1, panX = 0, panY = 0;
-    let dragging = false, drag0 = {};
-    let hintTimer = null;
-    let swipeStartX = 0, swipeStartY = 0;
-    let lastTouchDist = 0, lastTouchCx = 0, lastTouchCy = 0;
+      /* ── State ─────────────────────────────────────────────────────── */
+      let product = PRODUCTS[0];
+      let angleIdx = 0;
+      let zoom = 1, panX = 0, panY = 0;
+      let dragging = false, drag0 = {};
+      let hintTimer = null;
+      let swipeStartX = 0, swipeStartY = 0;
+      let lastTouchDist = 0, lastTouchCx = 0, lastTouchCy = 0;
 
-    /* ── DOM ────────────────────────────────────────────────────────── */
-    const el = id => document.getElementById(id);
-    const stage     = el('viewerStage');
-    const imgWrap   = el('viewerImgWrap');
-    const viewerImg = el('viewerImg');
+      /* ── DOM ────────────────────────────────────────────────────────── */
+      const el = id => document.getElementById(id);
+      const stage = el('viewerStage');
+      const imgWrap = el('viewerImgWrap');
+      const viewerImg = el('viewerImg');
 
-    /* ── Boot ───────────────────────────────────────────────────────── */
-    document.addEventListener('DOMContentLoaded', function () {
-      renderSidebar();
-      loadProduct(PRODUCTS[0]);
-      bindEvents();
-      showHint();
-    });
+      /* ── Boot ───────────────────────────────────────────────────────── */
+      document.addEventListener('DOMContentLoaded', function () {
+        renderSidebar();
+        loadProduct(PRODUCTS[0]);
+        bindEvents();
+        showHint();
+      });
 
-    /* ── Sidebar ────────────────────────────────────────────────────── */
-    function renderSidebar() {
-      el('showroomProducts').innerHTML = PRODUCTS.map((p, i) => `
+      /* ── Sidebar ────────────────────────────────────────────────────── */
+      function renderSidebar() {
+        el('showroomProducts').innerHTML = PRODUCTS.map((p, i) => `
         <li class="ss-item${i === 0 ? ' active' : ''}"
             data-id="${p.id}" role="option"
             aria-selected="${i === 0}" tabindex="0">
@@ -413,53 +479,53 @@
           </div>
         </li>`).join('');
 
-      el('showroomProducts').querySelectorAll('.ss-item').forEach(li => {
-        const activate = () => {
-          const p = PRODUCTS.find(p => p.id === li.dataset.id);
-          if (p) loadProduct(p);
-        };
-        li.addEventListener('click', activate);
-        li.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') activate(); });
-      });
-    }
-
-    /* ── Load product ───────────────────────────────────────────────── */
-    function loadProduct(p) {
-      product = p;
-      angleIdx = 0;
-      resetZoom(true);
-
-      el('showroomProducts').querySelectorAll('.ss-item').forEach(li => {
-        const active = li.dataset.id === p.id;
-        li.classList.toggle('active', active);
-        li.setAttribute('aria-selected', active);
-      });
-
-      el('viewerProductName').textContent = p.name;
-      el('viewerProductSub').textContent  = p.subtitle;
-      el('viewerPrice').textContent       = p.price;
-      el('viewerDesc').textContent        = p.desc;
-
-      const addBtn = el('viewerAddBtn');
-      if (p.custom) {
-        addBtn.style.display = 'none';
-      } else {
-        addBtn.style.display = '';
-        addBtn.dataset.productId    = p.id;
-        addBtn.dataset.productName  = p.name;
-        addBtn.dataset.productPrice = p.priceNum;
-        addBtn.dataset.productCat   = p.cat;
-        addBtn.textContent          = 'Add to Cart';
+        el('showroomProducts').querySelectorAll('.ss-item').forEach(li => {
+          const activate = () => {
+            const p = PRODUCTS.find(p => p.id === li.dataset.id);
+            if (p) loadProduct(p);
+          };
+          li.addEventListener('click', activate);
+          li.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') activate(); });
+        });
       }
 
-      renderThumbs(p);
-      renderHotspots(p.hotspots);
-      switchAngle(0, true);
-    }
+      /* ── Load product ───────────────────────────────────────────────── */
+      function loadProduct(p) {
+        product = p;
+        angleIdx = 0;
+        resetZoom(true);
 
-    /* ── Thumbnails ─────────────────────────────────────────────────── */
-    function renderThumbs(p) {
-      el('viewerThumbs').innerHTML = p.angles.map((a, i) => `
+        el('showroomProducts').querySelectorAll('.ss-item').forEach(li => {
+          const active = li.dataset.id === p.id;
+          li.classList.toggle('active', active);
+          li.setAttribute('aria-selected', active);
+        });
+
+        el('viewerProductName').textContent = p.name;
+        el('viewerProductSub').textContent = p.subtitle;
+        el('viewerPrice').textContent = p.price;
+        el('viewerDesc').textContent = p.desc;
+
+        const addBtn = el('viewerAddBtn');
+        if (p.custom) {
+          addBtn.style.display = 'none';
+        } else {
+          addBtn.style.display = '';
+          addBtn.dataset.productId = p.id;
+          addBtn.dataset.productName = p.name;
+          addBtn.dataset.productPrice = p.priceNum;
+          addBtn.dataset.productCat = p.cat;
+          addBtn.textContent = 'Add to Cart';
+        }
+
+        renderThumbs(p);
+        renderHotspots(p.hotspots);
+        switchAngle(0, true);
+      }
+
+      /* ── Thumbnails ─────────────────────────────────────────────────── */
+      function renderThumbs(p) {
+        el('viewerThumbs').innerHTML = p.angles.map((a, i) => `
         <button class="viewer-thumb${i === 0 ? ' active' : ''}"
                 data-index="${i}" role="tab"
                 aria-label="${a.label}" aria-selected="${i === 0}">
@@ -467,14 +533,14 @@
           <span class="vt-label">${a.label}</span>
         </button>`).join('');
 
-      el('viewerThumbs').querySelectorAll('.viewer-thumb').forEach(btn => {
-        btn.addEventListener('click', () => switchAngle(+btn.dataset.index));
-      });
-    }
+        el('viewerThumbs').querySelectorAll('.viewer-thumb').forEach(btn => {
+          btn.addEventListener('click', () => switchAngle(+btn.dataset.index));
+        });
+      }
 
-    /* ── Hotspots ───────────────────────────────────────────────────── */
-    function renderHotspots(hotspots) {
-      el('hotspotsWrap').innerHTML = (hotspots || []).map((h, i) => `
+      /* ── Hotspots ───────────────────────────────────────────────────── */
+      function renderHotspots(hotspots) {
+        el('hotspotsWrap').innerHTML = (hotspots || []).map((h, i) => `
         <button class="hotspot" style="left:${h.x}%;top:${h.y}%"
                 data-index="${i}" aria-label="Detail: ${h.label}">
           <span class="hotspot__ring"></span>
@@ -485,251 +551,252 @@
           </div>
         </button>`).join('');
 
-      el('hotspotsWrap').querySelectorAll('.hotspot').forEach(btn => {
-        btn.addEventListener('click', e => {
-          e.stopPropagation();
-          const wasOpen = btn.classList.contains('open');
-          el('hotspotsWrap').querySelectorAll('.hotspot.open').forEach(h => h.classList.remove('open'));
-          if (!wasOpen) btn.classList.add('open');
+        el('hotspotsWrap').querySelectorAll('.hotspot').forEach(btn => {
+          btn.addEventListener('click', e => {
+            e.stopPropagation();
+            const wasOpen = btn.classList.contains('open');
+            el('hotspotsWrap').querySelectorAll('.hotspot.open').forEach(h => h.classList.remove('open'));
+            if (!wasOpen) btn.classList.add('open');
+          });
         });
-      });
-    }
-
-    /* ── Switch angle ───────────────────────────────────────────────── */
-    function switchAngle(idx, instant) {
-      const angles = product.angles;
-      idx = ((idx % angles.length) + angles.length) % angles.length;
-      angleIdx = idx;
-
-      if (instant) {
-        viewerImg.style.transition = 'none';
-        viewerImg.style.opacity = '1';
-        viewerImg.src = angles[idx].src;
-      } else {
-        viewerImg.style.transition = 'opacity 0.25s ease';
-        viewerImg.style.opacity = '0';
-        const s = angles[idx].src;
-        const tmp = new Image();
-        tmp.onload = () => { viewerImg.src = s; viewerImg.style.opacity = '1'; };
-        tmp.src = s;
       }
 
-      el('angleLabel').textContent = angles[idx].label;
-      el('anglePos').textContent   = `${idx + 1} / ${angles.length}`;
+      /* ── Switch angle ───────────────────────────────────────────────── */
+      function switchAngle(idx, instant) {
+        const angles = product.angles;
+        idx = ((idx % angles.length) + angles.length) % angles.length;
+        angleIdx = idx;
 
-      el('viewerThumbs').querySelectorAll('.viewer-thumb').forEach((b, i) => {
-        b.classList.toggle('active', i === idx);
-        b.setAttribute('aria-selected', i === idx);
-      });
-
-      el('hotspotsWrap').querySelectorAll('.hotspot.open').forEach(h => h.classList.remove('open'));
-      resetZoom(true);
-    }
-
-    /* ── Zoom / pan ─────────────────────────────────────────────────── */
-    function resetZoom(silent) {
-      zoom = 1; panX = 0; panY = 0; dragging = false;
-      applyTransform(true);
-      if (!silent) showHint();
-    }
-
-    function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
-
-    function clampPan() {
-      const sw = stage.offsetWidth  / 2;
-      const sh = stage.offsetHeight / 2;
-      panX = clamp(panX, -sw * (zoom - 1) / zoom, sw * (zoom - 1) / zoom);
-      panY = clamp(panY, -sh * (zoom - 1) / zoom, sh * (zoom - 1) / zoom);
-    }
-
-    function zoomAt(factor, cx, cy) {
-      const rect = stage.getBoundingClientRect();
-      const ox = (cx - rect.left  - rect.width  / 2) / zoom;
-      const oy = (cy - rect.top   - rect.height / 2) / zoom;
-      const nz = clamp(zoom * factor, 1, 6);
-      panX -= ox * (nz - zoom) / nz;
-      panY -= oy * (nz - zoom) / nz;
-      zoom = nz;
-      clampPan();
-      applyTransform();
-    }
-
-    function applyTransform(instant) {
-      imgWrap.style.transition = instant ? 'none' : 'transform 0.1s ease-out';
-      imgWrap.style.transform  = `scale(${zoom}) translate(${panX}px, ${panY}px)`;
-      el('zoomLevel').textContent = Math.round(zoom * 100) + '%';
-      el('zoomResetBtn').disabled = zoom === 1;
-      stage.style.cursor = zoom > 1 ? (dragging ? 'grabbing' : 'grab') : 'zoom-in';
-    }
-
-    /* ── Hint ───────────────────────────────────────────────────────── */
-    function showHint() {
-      const hint = el('viewerHint');
-      clearTimeout(hintTimer);
-      hint.style.opacity = '1';
-      hintTimer = setTimeout(() => { hint.style.opacity = '0'; }, 3200);
-    }
-
-    /* ── Image URL helpers ──────────────────────────────────────────── */
-    function thumb(src, w) {
-      return src.replace('w=1600', `w=${w || 180}`).replace('q=90', 'q=70');
-    }
-
-    /* ── Events ─────────────────────────────────────────────────────── */
-    function bindEvents() {
-
-      /* Arrow buttons */
-      el('prevAngle').addEventListener('click', e => { e.stopPropagation(); switchAngle(angleIdx - 1); });
-      el('nextAngle').addEventListener('click', e => { e.stopPropagation(); switchAngle(angleIdx + 1); });
-
-      /* Zoom buttons */
-      el('zoomInBtn').addEventListener('click', () => {
-        const r = stage.getBoundingClientRect();
-        zoomAt(1.4, r.left + r.width / 2, r.top + r.height / 2);
-      });
-      el('zoomOutBtn').addEventListener('click', () => {
-        const r = stage.getBoundingClientRect();
-        zoomAt(0.7, r.left + r.width / 2, r.top + r.height / 2);
-      });
-      el('zoomResetBtn').addEventListener('click', () => resetZoom());
-
-      /* Fullscreen */
-      el('fullscreenBtn').addEventListener('click', toggleFullscreen);
-      document.addEventListener('fullscreenchange', updateFullscreenBtn);
-      document.addEventListener('webkitfullscreenchange', updateFullscreenBtn);
-
-      /* Mouse wheel zoom */
-      stage.addEventListener('wheel', e => {
-        e.preventDefault();
-        zoomAt(e.deltaY < 0 ? 1.1 : 0.9, e.clientX, e.clientY);
-        el('viewerHint').style.opacity = '0';
-      }, { passive: false });
-
-      /* Mouse drag pan */
-      stage.addEventListener('mousedown', e => {
-        if (e.button !== 0) return;
-        if (zoom > 1) {
-          dragging = true;
-          drag0 = { x: e.clientX, y: e.clientY, px: panX, py: panY };
-          applyTransform(true);
-        }
-      });
-      window.addEventListener('mousemove', e => {
-        if (!dragging) return;
-        panX = drag0.px + (e.clientX - drag0.x) / zoom;
-        panY = drag0.py + (e.clientY - drag0.y) / zoom;
-        clampPan();
-        applyTransform(true);
-      });
-      window.addEventListener('mouseup', () => {
-        if (dragging) { dragging = false; applyTransform(); }
-      });
-
-      /* Click to zoom / reset */
-      stage.addEventListener('click', e => {
-        if (dragging) return;
-        if (el('hotspotsWrap').contains(e.target)) return;
-        if (zoom === 1) {
-          zoomAt(2.5, e.clientX, e.clientY);
+        if (instant) {
+          viewerImg.style.transition = 'none';
+          viewerImg.style.opacity = '1';
+          viewerImg.src = angles[idx].src;
         } else {
-          resetZoom();
+          viewerImg.style.transition = 'opacity 0.25s ease';
+          viewerImg.style.opacity = '0';
+          const s = angles[idx].src;
+          const tmp = new Image();
+          tmp.onload = () => { viewerImg.src = s; viewerImg.style.opacity = '1'; };
+          tmp.src = s;
         }
-      });
 
-      /* Close hotspot on stage click */
-      stage.addEventListener('click', () => {
+        el('angleLabel').textContent = angles[idx].label;
+        el('anglePos').textContent = `${idx + 1} / ${angles.length}`;
+
+        el('viewerThumbs').querySelectorAll('.viewer-thumb').forEach((b, i) => {
+          b.classList.toggle('active', i === idx);
+          b.setAttribute('aria-selected', i === idx);
+        });
+
         el('hotspotsWrap').querySelectorAll('.hotspot.open').forEach(h => h.classList.remove('open'));
-      });
+        resetZoom(true);
+      }
 
-      /* Touch: pinch zoom + drag pan + swipe angle */
-      stage.addEventListener('touchstart', e => {
-        const t = e.touches;
-        if (t.length === 2) {
-          lastTouchDist = Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
-          lastTouchCx = (t[0].clientX + t[1].clientX) / 2;
-          lastTouchCy = (t[0].clientY + t[1].clientY) / 2;
-        } else if (t.length === 1) {
-          swipeStartX = t[0].clientX;
-          swipeStartY = t[0].clientY;
+      /* ── Zoom / pan ─────────────────────────────────────────────────── */
+      function resetZoom(silent) {
+        zoom = 1; panX = 0; panY = 0; dragging = false;
+        applyTransform(true);
+        if (!silent) showHint();
+      }
+
+      function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+      function clampPan() {
+        const sw = stage.offsetWidth / 2;
+        const sh = stage.offsetHeight / 2;
+        panX = clamp(panX, -sw * (zoom - 1) / zoom, sw * (zoom - 1) / zoom);
+        panY = clamp(panY, -sh * (zoom - 1) / zoom, sh * (zoom - 1) / zoom);
+      }
+
+      function zoomAt(factor, cx, cy) {
+        const rect = stage.getBoundingClientRect();
+        const ox = (cx - rect.left - rect.width / 2) / zoom;
+        const oy = (cy - rect.top - rect.height / 2) / zoom;
+        const nz = clamp(zoom * factor, 1, 6);
+        panX -= ox * (nz - zoom) / nz;
+        panY -= oy * (nz - zoom) / nz;
+        zoom = nz;
+        clampPan();
+        applyTransform();
+      }
+
+      function applyTransform(instant) {
+        imgWrap.style.transition = instant ? 'none' : 'transform 0.1s ease-out';
+        imgWrap.style.transform = `scale(${zoom}) translate(${panX}px, ${panY}px)`;
+        el('zoomLevel').textContent = Math.round(zoom * 100) + '%';
+        el('zoomResetBtn').disabled = zoom === 1;
+        stage.style.cursor = zoom > 1 ? (dragging ? 'grabbing' : 'grab') : 'zoom-in';
+      }
+
+      /* ── Hint ───────────────────────────────────────────────────────── */
+      function showHint() {
+        const hint = el('viewerHint');
+        clearTimeout(hintTimer);
+        hint.style.opacity = '1';
+        hintTimer = setTimeout(() => { hint.style.opacity = '0'; }, 3200);
+      }
+
+      /* ── Image URL helpers ──────────────────────────────────────────── */
+      function thumb(src, w) {
+        return src.replace('w=1600', `w=${w || 180}`).replace('q=90', 'q=70');
+      }
+
+      /* ── Events ─────────────────────────────────────────────────────── */
+      function bindEvents() {
+
+        /* Arrow buttons */
+        el('prevAngle').addEventListener('click', e => { e.stopPropagation(); switchAngle(angleIdx - 1); });
+        el('nextAngle').addEventListener('click', e => { e.stopPropagation(); switchAngle(angleIdx + 1); });
+
+        /* Zoom buttons */
+        el('zoomInBtn').addEventListener('click', () => {
+          const r = stage.getBoundingClientRect();
+          zoomAt(1.4, r.left + r.width / 2, r.top + r.height / 2);
+        });
+        el('zoomOutBtn').addEventListener('click', () => {
+          const r = stage.getBoundingClientRect();
+          zoomAt(0.7, r.left + r.width / 2, r.top + r.height / 2);
+        });
+        el('zoomResetBtn').addEventListener('click', () => resetZoom());
+
+        /* Fullscreen */
+        el('fullscreenBtn').addEventListener('click', toggleFullscreen);
+        document.addEventListener('fullscreenchange', updateFullscreenBtn);
+        document.addEventListener('webkitfullscreenchange', updateFullscreenBtn);
+
+        /* Mouse wheel zoom */
+        stage.addEventListener('wheel', e => {
+          e.preventDefault();
+          zoomAt(e.deltaY < 0 ? 1.1 : 0.9, e.clientX, e.clientY);
+          el('viewerHint').style.opacity = '0';
+        }, { passive: false });
+
+        /* Mouse drag pan */
+        stage.addEventListener('mousedown', e => {
+          if (e.button !== 0) return;
           if (zoom > 1) {
             dragging = true;
-            drag0 = { x: t[0].clientX, y: t[0].clientY, px: panX, py: panY };
+            drag0 = { x: e.clientX, y: e.clientY, px: panX, py: panY };
+            applyTransform(true);
           }
-        }
-      }, { passive: true });
-
-      stage.addEventListener('touchmove', e => {
-        const t = e.touches;
-        if (t.length === 2) {
-          e.preventDefault();
-          const dist = Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
-          const cx   = (t[0].clientX + t[1].clientX) / 2;
-          const cy   = (t[0].clientY + t[1].clientY) / 2;
-          if (lastTouchDist > 0) zoomAt(dist / lastTouchDist, cx, cy);
-          lastTouchDist = dist; lastTouchCx = cx; lastTouchCy = cy;
-        } else if (t.length === 1 && dragging) {
-          panX = drag0.px + (t[0].clientX - drag0.x) / zoom;
-          panY = drag0.py + (t[0].clientY - drag0.y) / zoom;
+        });
+        window.addEventListener('mousemove', e => {
+          if (!dragging) return;
+          panX = drag0.px + (e.clientX - drag0.x) / zoom;
+          panY = drag0.py + (e.clientY - drag0.y) / zoom;
           clampPan();
           applyTransform(true);
-        }
-      }, { passive: false });
+        });
+        window.addEventListener('mouseup', () => {
+          if (dragging) { dragging = false; applyTransform(); }
+        });
 
-      stage.addEventListener('touchend', e => {
-        lastTouchDist = 0;
-        dragging = false;
-        /* Swipe angle change (only when not zoomed) */
-        if (zoom === 1 && e.changedTouches.length === 1) {
-          const dx = e.changedTouches[0].clientX - swipeStartX;
-          const dy = e.changedTouches[0].clientY - swipeStartY;
-          if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy)) {
-            switchAngle(angleIdx + (dx < 0 ? 1 : -1));
+        /* Click to zoom / reset */
+        stage.addEventListener('click', e => {
+          if (dragging) return;
+          if (el('hotspotsWrap').contains(e.target)) return;
+          if (zoom === 1) {
+            zoomAt(2.5, e.clientX, e.clientY);
+          } else {
+            resetZoom();
           }
-        }
-        applyTransform();
-      });
+        });
 
-      /* Keyboard */
-      document.addEventListener('keydown', e => {
-        if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
-        if (e.key === 'ArrowLeft')             switchAngle(angleIdx - 1);
-        if (e.key === 'ArrowRight')            switchAngle(angleIdx + 1);
-        if (e.key === '+' || e.key === '=') {
-          const r = stage.getBoundingClientRect();
-          zoomAt(1.3, r.left + r.width / 2, r.top + r.height / 2);
-        }
-        if (e.key === '-' || e.key === '_') {
-          const r = stage.getBoundingClientRect();
-          zoomAt(0.77, r.left + r.width / 2, r.top + r.height / 2);
-        }
-        if (e.key === 'Escape')               resetZoom();
-        if (e.key === 'f' || e.key === 'F')   toggleFullscreen();
-      });
-    }
+        /* Close hotspot on stage click */
+        stage.addEventListener('click', () => {
+          el('hotspotsWrap').querySelectorAll('.hotspot.open').forEach(h => h.classList.remove('open'));
+        });
 
-    /* ── Fullscreen ─────────────────────────────────────────────────── */
-    function toggleFullscreen() {
-      const app = el('showroomApp');
-      if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-        (app.requestFullscreen || app.webkitRequestFullscreen).call(app);
-      } else {
-        (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+        /* Touch: pinch zoom + drag pan + swipe angle */
+        stage.addEventListener('touchstart', e => {
+          const t = e.touches;
+          if (t.length === 2) {
+            lastTouchDist = Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+            lastTouchCx = (t[0].clientX + t[1].clientX) / 2;
+            lastTouchCy = (t[0].clientY + t[1].clientY) / 2;
+          } else if (t.length === 1) {
+            swipeStartX = t[0].clientX;
+            swipeStartY = t[0].clientY;
+            if (zoom > 1) {
+              dragging = true;
+              drag0 = { x: t[0].clientX, y: t[0].clientY, px: panX, py: panY };
+            }
+          }
+        }, { passive: true });
+
+        stage.addEventListener('touchmove', e => {
+          const t = e.touches;
+          if (t.length === 2) {
+            e.preventDefault();
+            const dist = Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+            const cx = (t[0].clientX + t[1].clientX) / 2;
+            const cy = (t[0].clientY + t[1].clientY) / 2;
+            if (lastTouchDist > 0) zoomAt(dist / lastTouchDist, cx, cy);
+            lastTouchDist = dist; lastTouchCx = cx; lastTouchCy = cy;
+          } else if (t.length === 1 && dragging) {
+            panX = drag0.px + (t[0].clientX - drag0.x) / zoom;
+            panY = drag0.py + (t[0].clientY - drag0.y) / zoom;
+            clampPan();
+            applyTransform(true);
+          }
+        }, { passive: false });
+
+        stage.addEventListener('touchend', e => {
+          lastTouchDist = 0;
+          dragging = false;
+          /* Swipe angle change (only when not zoomed) */
+          if (zoom === 1 && e.changedTouches.length === 1) {
+            const dx = e.changedTouches[0].clientX - swipeStartX;
+            const dy = e.changedTouches[0].clientY - swipeStartY;
+            if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy)) {
+              switchAngle(angleIdx + (dx < 0 ? 1 : -1));
+            }
+          }
+          applyTransform();
+        });
+
+        /* Keyboard */
+        document.addEventListener('keydown', e => {
+          if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+          if (e.key === 'ArrowLeft') switchAngle(angleIdx - 1);
+          if (e.key === 'ArrowRight') switchAngle(angleIdx + 1);
+          if (e.key === '+' || e.key === '=') {
+            const r = stage.getBoundingClientRect();
+            zoomAt(1.3, r.left + r.width / 2, r.top + r.height / 2);
+          }
+          if (e.key === '-' || e.key === '_') {
+            const r = stage.getBoundingClientRect();
+            zoomAt(0.77, r.left + r.width / 2, r.top + r.height / 2);
+          }
+          if (e.key === 'Escape') resetZoom();
+          if (e.key === 'f' || e.key === 'F') toggleFullscreen();
+        });
       }
-    }
 
-    function updateFullscreenBtn() {
-      const inFS  = !!(document.fullscreenElement || document.webkitFullscreenElement);
-      const btn   = el('fullscreenBtn');
-      btn.setAttribute('aria-label', inFS ? 'Exit fullscreen' : 'Enter fullscreen');
-      btn.title    = inFS ? 'Exit fullscreen (Esc)' : 'Fullscreen (F)';
-      btn.innerHTML = inFS
-        ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/><line x1="10" y1="14" x2="3" y2="21"/><line x1="21" y1="3" x2="14" y2="10"/></svg>`
-        : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>`;
-    }
+      /* ── Fullscreen ─────────────────────────────────────────────────── */
+      function toggleFullscreen() {
+        const app = el('showroomApp');
+        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+          (app.requestFullscreen || app.webkitRequestFullscreen).call(app);
+        } else {
+          (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+        }
+      }
 
-  })();
+      function updateFullscreenBtn() {
+        const inFS = !!(document.fullscreenElement || document.webkitFullscreenElement);
+        const btn = el('fullscreenBtn');
+        btn.setAttribute('aria-label', inFS ? 'Exit fullscreen' : 'Enter fullscreen');
+        btn.title = inFS ? 'Exit fullscreen (Esc)' : 'Fullscreen (F)';
+        btn.innerHTML = inFS
+          ? `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/><line x1="10" y1="14" x2="3" y2="21"/><line x1="21" y1="3" x2="14" y2="10"/></svg>`
+          : `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>`;
+      }
+
+    })();
   </script>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
